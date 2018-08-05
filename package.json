@@ -1,0 +1,38 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "A clean start with babel, eslint (airbnb) and webpack for browser environment.",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neulandagentur/webpack-starter.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "eslint",
+    "boilerplate"
+  ],
+  "author": "NEULAND. Medienagentur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neulandagentur/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/neulandagentur/webpack-starter#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
