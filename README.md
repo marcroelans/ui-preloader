@@ -6,7 +6,7 @@
 
 # webpack-starter
 A clean start with babel, eslint (airbnb) and webpack.
-It will transpile your ES6 code, lint your code and bundle it.
+It will transpile your ES6 code, lint your code and bundles it.
 
 ## Install
 Clone the repo and install the packages `npm install`.
