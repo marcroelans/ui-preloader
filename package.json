@@ -8,7 +8,7 @@
     "server": "webpack-dev-server --config webpack.config.js --open",
     "build": "node_modules/.bin/webpack",
     "watch": "node_modules/.bin/webpack --watch",
-    "styles": "node_modules/.bin/node-sass sass/src/index.scss sass/dist/styles.css --output-style compressed --watch"
+    "styles": "node_modules/.bin/sass sass/src/index.scss sass/dist/styles.css --watch"
   },
   "repository": {
     "type": "git",
