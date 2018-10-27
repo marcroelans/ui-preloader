@@ -5,11 +5,20 @@
 </p>
 
 # webpack-starter
-A clean start with babel, eslint (airbnb) and webpack.
-It will transpile your ES6 code, lint your code and bundles it.
+- webpack
+- webpack-dev-server
+- babel (v7)
+- eslint (airbnb)
+- jsx support
 
 ## Install
 Clone the repo and install the packages `npm install`.
 
-## Usage
-You can use `webpack` to start  or `webpack --watch`.
+## Scripts
+- `npm run build` - transpiles the js files
+- `npm run watch` - transpiles the js files and watche for changes
+- `npm run styles` - compiles the sass files 
+- `npm run server` - start server
+- `npm run start` - runs `npm run build` and `npm run build`
+
+
