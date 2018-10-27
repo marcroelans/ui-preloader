@@ -4,7 +4,8 @@
   "description": "A clean start with babel, eslint (airbnb) and webpack for browser environment.",
   "main": "bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node_modules/.bin/webpack --watch",
+    "styles": "node_modules/.bin/node-sass sass/src/index.scss sass/dist/styles.css --output-style compressed --watch"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "webpack": "^4.19.0",
     "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3"
   }
 }
