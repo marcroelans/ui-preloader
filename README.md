@@ -10,6 +10,7 @@
 - babel (v7)
 - eslint (airbnb)
 - jsx support
+- sass
 
 ## Install
 Clone the repo and install the packages `npm install`.
