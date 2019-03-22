@@ -1,3 +1,7 @@
+<p align="center"><img src="assets/logo.png" width="300" height="auto"></p>
+
+---
+
 <p align="center">
   <img src="https://camo.githubusercontent.com/e69fbfc8dc529fda880b1890f43fa0aec6ab5cb6/687474703a2f2f65736c696e742e6f72672f696d672f6c6f676f2e737667" width="150" height="150">
   <img src="https://webpack.js.org/assets/icon-square-big.svg" width="150" height="150">
