@@ -1,32 +1,32 @@
 .title {
-  font-size: 30px;
+  text-align: center;
+  font-size: 100px;
   color: #3d4548;
   padding: 50px;
   margin: 0;
 }
 
-.button {
-  cursor: pointer;
-  display: block;
-  width: 200px;
-  line-height: 50px;
-  color: white;
-  background-color: #00b0b9;
-  border-style: none;
-}
-
-.button.preloader-open {
+.buttons {
+  z-index: 1;
   position: absolute;
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.button.preloader-close {
-  z-index: 1;
-  position: absolute;
-  top: 50px;
-  right: 20px;
+.button {
+  cursor: pointer;
+  width: 280px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #00b0b9;
+  border-style: none;
+}
+
+.button.preloader-open {
+  margin-right: 50px;
 }
 
 .preloader-js-container {
@@ -59,8 +59,8 @@
   position: absolute;
   width: 51px;
   height: 51px;
-  margin: 6px;
-  border: 6px solid black;
+  margin: 10px;
+  border: 10px solid black;
   border-radius: 50%;
   animation: preloader-js 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #00b0b9 transparent transparent transparent;

@@ -1,32 +1,33 @@
 .title {
-  font-size: 30px;
+  text-align: center;
+  font-size: 100px;
   color: rgba(61, 69, 72, 1);
   padding: 50px;
   margin: 0;
 }
 
+.buttons {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
 .button {
   cursor: pointer;
-  display: block;
-  width: 200px;
+  width: 280px;
   line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
   background-color: rgba(0, 176, 185, 1);
   border-style: none;
 }
 
 .button.preloader-open {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.button.preloader-close {
-  z-index: 1;
-  position: absolute;
-  top: 50px;
-  right: 20px;
+  margin-right: 50px;
 }
 
 .preloader-js-container {
@@ -59,8 +60,8 @@
   position: absolute;
   width: 51px;
   height: 51px;
-  margin: 6px;
-  border: 6px solid black;
+  margin: 10px;
+  border: 10px solid black;
   border-radius: 50%;
   animation: preloader-js 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: rgba(0, 176, 185, 1) transparent transparent transparent;

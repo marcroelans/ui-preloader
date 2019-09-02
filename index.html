@@ -9,8 +9,10 @@
 
     <h3 class="title">Preloader</h3>
 
-    <button class="button preloader-open">Load</button>
-    <button class="button preloader-close">Close</button>
+    <div class="buttons">
+      <button class="button preloader-open">Load</button>
+      <button class="button preloader-close">Close</button>
+    </div>
 
     <script src="js/dist/ui-preloader.js"></script>
     <script>
@@ -26,6 +28,10 @@
       */
       const uiPreloader = UiPreloader.init();
 
+      // window.addEventListener('load', () => {
+      //   uiPreloader.render();
+      // })
+
 
       /**
       * addEventListener to render and destroy preloader
@@ -38,6 +44,8 @@
       closeButton.addEventListener('click', () => {
         uiPreloader.destroy();
       })
+
+
 
     </script>
 
