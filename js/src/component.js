@@ -1,4 +1,5 @@
-import h from './utlilities/h';
+import h from './util/h';
+import div from './util/div';
 
 class UiPreloader {
   constructor(root) {
@@ -9,18 +10,13 @@ class UiPreloader {
   createTemplate() {
 
     this.template = h('div', { class: 'preloader-js' }, [
-      this.createEmptyDiv(),
-      this.createEmptyDiv(),
-      this.createEmptyDiv(),
-      this.createEmptyDiv(),
+      div(),
+      div(),
+      div(),
+      div(),
     ]);
 
     return this.template;
-
-  }
-
-  createEmptyDiv() {
-    return h('div');
   }
 
   render() {
@@ -28,6 +24,15 @@ class UiPreloader {
       const template = this.createTemplate();
       this.root.appendChild(template);
     };
+  }
+
+  destroy() {
+    if(!this.template) {
+      return;
+    }
+
+    this.root.removeChild(this.template);
+    this.template = null;
   }
 }
 

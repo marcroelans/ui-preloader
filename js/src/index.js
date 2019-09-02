@@ -1,7 +1,7 @@
 import UiPreloader from './component';
 
 /**
- * init componenent
+ * init component
  */
 const init = (root = document.querySelector('body')) => new UiPreloader(root);
 

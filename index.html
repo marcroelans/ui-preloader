@@ -9,17 +9,23 @@
 
     <div class="preloader-js-container"></div>
 
-    <button class="button preloader">Load</button>
+    <button class="button preloader-open">Load</button>
+    <button class="button preloader-close">Close</button>
 
     <script src="js/dist/ui-preloader.js"></script>
     <script>
 
       const preloader = document.querySelector('.preloader-js-container');
-      const button = document.querySelector('.button.preloader');
+      const openButton = document.querySelector('.button.preloader-open');
+      const closeButton = document.querySelector('.button.preloader-close');
       const uiPreloader = UiPreloader.init(preloader);
 
-      button.addEventListener('click', () => {
+      openButton.addEventListener('click', () => {
         uiPreloader.render();
+      })
+
+      closeButton.addEventListener('click', () => {
+        uiPreloader.destroy();
       })
 
     </script>
