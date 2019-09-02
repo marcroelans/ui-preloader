@@ -2,11 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="sass/dist/styles.css" media="screen"/>
     <title></title>
   </head>
   <body>
 
-    <script src="js/dist/bundle.js"></script>
+    <div class="preloader-js-container"></div>
+
+    <button class="button preloader">Load</button>
+
+    <script src="js/dist/ui-preloader.js"></script>
+    <script>
+
+      const preloader = document.querySelector('.preloader-js-container');
+      const button = document.querySelector('.button.preloader');
+      const uiPreloader = UiPreloader.init(preloader);
+
+      button.addEventListener('click', () => {
+        uiPreloader.render();
+      })
+
+    </script>
 
   </body>
 </html>

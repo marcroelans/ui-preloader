@@ -21,7 +21,9 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
+    library: 'UiPreloader',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, './js/dist'),
-    filename: 'bundle.js'
+    filename: 'ui-preloader.js'
   }
 };
