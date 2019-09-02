@@ -7,7 +7,7 @@
   </head>
   <body>
 
-    <div class="preloader-js-container"></div>
+    <h3 class="title">Preloader</h3>
 
     <button class="button preloader-open">Load</button>
     <button class="button preloader-close">Close</button>
@@ -16,19 +16,15 @@
     <script>
 
       /**
-      * getting open and close Button
+      * init open button
       */
-
       const openButton = document.querySelector('.button.preloader-open');
       const closeButton = document.querySelector('.button.preloader-close');
 
       /**
-      * init preloader container
       * start new instance of UiPreloader
       */
-
-      const preloader = document.querySelector('.preloader-js-container');
-      const uiPreloader = UiPreloader.init(preloader);
+      const uiPreloader = UiPreloader.init();
 
 
       /**

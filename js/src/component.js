@@ -18,11 +18,14 @@ class UiPreloader {
    */
   createTemplate() {
 
-    this.template = h('div', { class: 'preloader-js' }, [
-      div(),
-      div(),
-      div(),
-      div(),
+    this.template = h('div', { class: 'preloader-js-container' }, [
+      h('div', { class: 'shadow' }),
+      h('div', { class: 'preloader-js' }, [
+        div(),
+        div(),
+        div(),
+        div(),
+      ]),
     ]);
 
     return this.template;
