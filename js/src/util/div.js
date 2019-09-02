@@ -1,4 +1,4 @@
-import h from './h';
+import { h } from 'create-element-lib';
 
 /**
  * utility function to return empty div

@@ -1,4 +1,4 @@
-import h from './util/h';
+import { h } from 'create-element-lib';
 import div from './util/div';
 
 class UiPreloader {
