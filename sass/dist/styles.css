@@ -1,11 +1,14 @@
-.preloader-js {
-  display: inline-block;
+.preloader-js-container {
   position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader-js {
+  display: inline-block;
   width: 64px;
   height: 64px;
-  transform: translate(-50%, -50%);
 }
 
 .preloader-js div {

@@ -2,11 +2,20 @@ import h from './util/h';
 import div from './util/div';
 
 class UiPreloader {
+
+  /**
+  * constructor
+  * @param {Node} root
+  */
   constructor(root) {
     this.root = root;
-    this.template = null;
+    this.template = null; // store complete html container
   }
 
+  /**
+   * creates the html template
+   * @return {HTMLElement}
+   */
   createTemplate() {
 
     this.template = h('div', { class: 'preloader-js' }, [
@@ -19,6 +28,9 @@ class UiPreloader {
     return this.template;
   }
 
+  /**
+   * renders the html template in the dom
+   */
   render() {
     if (!this.template) {
       const template = this.createTemplate();
@@ -26,6 +38,9 @@ class UiPreloader {
     };
   }
 
+  /**
+   * deletes the html template from the dom
+   */
   destroy() {
     if(!this.template) {
       return;

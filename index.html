@@ -15,10 +15,25 @@
     <script src="js/dist/ui-preloader.js"></script>
     <script>
 
-      const preloader = document.querySelector('.preloader-js-container');
+      /**
+      * getting open and close Button
+      */
+
       const openButton = document.querySelector('.button.preloader-open');
       const closeButton = document.querySelector('.button.preloader-close');
+
+      /**
+      * init preloader container
+      * start new instance of UiPreloader
+      */
+
+      const preloader = document.querySelector('.preloader-js-container');
       const uiPreloader = UiPreloader.init(preloader);
+
+
+      /**
+      * addEventListener to render and destroy preloader
+      */
 
       openButton.addEventListener('click', () => {
         uiPreloader.render();
