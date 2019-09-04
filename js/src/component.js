@@ -17,7 +17,6 @@ class UiPreloader {
    * @return {HTMLElement}
    */
   createTemplate() {
-
     this.template = h('div', { class: 'preloader-js-container' }, [
       h('div', { class: 'shadow' }),
       h('div', { class: 'preloader-js' }, [
@@ -35,10 +34,12 @@ class UiPreloader {
    * renders the html template in the dom
    */
   render() {
-    if (!this.template) {
-      const template = this.createTemplate();
-      this.root.appendChild(template);
-    };
+    if (this.template) {
+      return;
+    }
+
+    const template = this.createTemplate();
+    this.root.appendChild(template);
   }
 
   /**
