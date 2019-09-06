@@ -2,7 +2,6 @@ import { h } from 'create-element-lib';
 import div from './util/div';
 
 class UiPreloader {
-
   /**
   * constructor
   * @param {Node} root
@@ -46,7 +45,7 @@ class UiPreloader {
    * deletes the html template from the dom
    */
   destroy() {
-    if(!this.template) {
+    if (!this.template) {
       return;
     }
 
