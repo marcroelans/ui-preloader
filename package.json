@@ -1,8 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "ui-preloader",
   "version": "1.0.0",
-  "description": "A clean start with babel, eslint (airbnb) and webpack for browser environment.",
-  "main": "bundle.js",
+  "main": "js/dist/ui-preloader.js",
   "scripts": {
     "start": "npm run build && npm run server",
     "server": "webpack-dev-server --config webpack.config.js --open",
@@ -14,17 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/neulandagentur/webpack-starter.git"
   },
-  "keywords": [
-    "webpack",
-    "babel",
-    "eslint",
-    "boilerplate"
-  ],
   "author": "NEULAND. Medienagentur",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neulandagentur/webpack-starter/issues"
-  },
   "homepage": "https://github.com/neulandagentur/webpack-starter#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
