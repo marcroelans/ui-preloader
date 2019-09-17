@@ -47,10 +47,10 @@ Root is by default the body element.
   const myPreloader = init(document.querySelector('.container'));
 ```
 
-`close()`
+`destroy()`
 Once you create an inheritance and the preloader is not needed anymore
 you can just call the destroy method to remove it from the dom.
 
 ``` javascript
- myPreloader.close()
+ myPreloader.destroy()
 ```
